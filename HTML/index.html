@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Información de la BBDD</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <h1>Gestión de la Base de Datos</h1>
+    
+    <h2>Buscar</h2>
+    <div id="searchForm">
+        <label for="search">Buscar por nombre:</label>
+        <input type="text" id="search" name="search">
+        <button id="Buscar">Buscar</button>
+    </div>
+    
+    <h2>Mostrar Toda la Base de Datos</h2>
+    <button id="showAllButton">Mostrar Todo</button>
+    
+    <h2>Resultados</h2>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se insertarán los resultados de la búsqueda -->
+        </tbody>
+    </table>
+    
+    <h2>Modificar/Eliminar</h2>
+    <div id="modifyForm">
+        <input type="hidden" id="modifyId" name="id">
+        <label for="modifyNombre">Nombre:</label>
+        <input type="text" id="modifyNombre" name="nombre">
+        <label for="modifyApellido">Apellido:</label>
+        <input type="text" id="modifyApellido" name="apellido">
+        <label for="modifyCorreo">Correo:</label>
+        <input type="email" id="modifyCorreo" name="correo">
+        <button id="Modificar">Modificar</button>
+        <button id="deleteButton">Eliminar</button>
+    </div>
+    <script src="../js/mostrar.js"></script>
+    <script src="../js/buscar.js"></script>
+    <script src="../js/modificar.js"></script>
+    <script src="../js/eliminar.js"></script>
+   
+    
+</body>
+</html>
